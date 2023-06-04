@@ -136,7 +136,7 @@ label {
 }
 input {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 35px;
   border: turquoise 2px dashed;
   margin-bottom: 10px;

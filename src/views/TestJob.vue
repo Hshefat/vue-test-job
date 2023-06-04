@@ -1,20 +1,24 @@
 <template>
-    <h3>
-        Hello
-    </h3>
+        <form>
+            <label>Two Way Binding:</label>
+            <input type="text"   v-model="state.textChange">
+            <p>Message Show: {{ state.textChange}}</p>
+        </form>
 </template>
 
-<script>
+<script lang="ts">
 // import { defineComponent } from '@vue/composition-api'
-import { defineComponent  } from 'vue'; // must include
+import { defineComponent, reactive, ref } from 'vue'; // must include
 
 export default defineComponent({
-
     name: "Test-Page",
 
-
     setup() {
-        return {}
+        let state=ref<any>({
+            textChange:"hsasf"
+        })
+      
+        return { state }
     },
 })
 </script>
